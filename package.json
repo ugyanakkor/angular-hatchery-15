@@ -2,7 +2,8 @@
   "name": "angular-hatchery",
   "license": "MIT",
   "engines": {
-    "node": ">=16.13 <17"
+    "node": ">=16.13 <17",
+    "yarn": "1.22.19"
   },
   "version": "0.0.0",
   "scripts": {
