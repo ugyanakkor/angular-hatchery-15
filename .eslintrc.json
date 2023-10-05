@@ -10,7 +10,7 @@
         "plugin:@angular-eslint/recommended",
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
-      "plugins": ["change-detection-strategy"],
+      "plugins": ["change-detection-strategy", "simple-import-sort"],
       "rules": {
         "@angular-eslint/directive-selector": [
           "error",
@@ -28,7 +28,21 @@
             "style": "kebab-case"
           }
         ],
-        "change-detection-strategy/on-push": "error"
+        "change-detection-strategy/on-push": "error",
+        "simple-import-sort/imports": [
+          "error",
+          {
+            "groups": [
+              // Anything that start with @angular
+              ["^@angular"],
+              // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
+              ["^@?\\w"],
+              // Anything that starts with a dot.
+              ["^\\."]
+            ]
+          }
+        ],
+        "simple-import-sort/exports": "error"
       }
     },
     {
