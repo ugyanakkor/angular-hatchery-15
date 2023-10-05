@@ -12,7 +12,15 @@ sustainable development.
 - Husky
 - Jest framework
 - Cypress E2E framework
-- Specified node and yarn engine which is supported by Angular 15
+- Specified node engine which is supported by Angular 15
+- UntilDestroy decorator
+
+## ESLint plugins which are integrated
+
+- change-detection-strategy
+- rxjs
+- rxjs-angular
+- simple-import-sort
 
 ## Development server
 
