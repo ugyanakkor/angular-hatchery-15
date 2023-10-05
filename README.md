@@ -38,4 +38,4 @@ Run `yarn test` to execute the unit tests via [Jest](https://jestjs.io/).
 ## Running end-to-end tests
 
 Run `yarn cypress:open` to run a specific test for development purposes.\
-Run `cypress:run` to execute the end-to-end tests.
+Run `yarn cypress:run` to execute the end-to-end tests.
