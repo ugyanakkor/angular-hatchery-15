@@ -14,7 +14,12 @@
       "parserOptions": {
         "project": ["./tsconfig.json"]
       },
-      "plugins": ["change-detection-strategy", "rxjs", "rxjs-angular","simple-import-sort"],
+      "plugins": [
+        "change-detection-strategy",
+        "rxjs",
+        "rxjs-angular",
+        "simple-import-sort"
+      ],
       "rules": {
         "@angular-eslint/directive-selector": [
           "error",
@@ -47,7 +52,13 @@
           }
         ],
         "simple-import-sort/exports": "error",
-        "rxjs-angular/prefer-takeuntil": "error"
+        "rxjs-angular/prefer-takeuntil": [
+          "error",
+          {
+            "alias": ["untilDestroyed"],
+            "checkDecorators": ["Component"]
+          }
+        ]
       }
     },
     {
