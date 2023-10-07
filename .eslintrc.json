@@ -37,6 +37,7 @@
             "style": "kebab-case"
           }
         ],
+        "@typescript-eslint/no-unused-vars": "error",
         "change-detection-strategy/on-push": "error",
         "simple-import-sort/imports": [
           "error",
@@ -58,7 +59,8 @@
             "alias": ["untilDestroyed"],
             "checkDecorators": ["Component"]
           }
-        ]
+        ],
+        "eol-last": "error"
       }
     },
     {
