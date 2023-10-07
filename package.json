@@ -13,8 +13,8 @@
     "test": "jest --no-cache",
     "lint": "ng lint",
     "prettier": "npx prettier --write .",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
+    "e2e": "cypress run",
+    "e2e:dev": "cypress open",
     "postinstall": "npx husky install"
   },
   "private": false,
